@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:orientation="vertical"
+    tools:context=".FeedPrincipal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="674dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="125dp"
+            android:layout_height="83dp"
+            android:text="FeedCalmRed"
+            android:textSize="34sp" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="81dp"
+            android:layout_height="85dp"
+            android:layout_gravity="right"
+            android:onClick="irPerfilUsuario1"
+            app:srcCompat="@drawable/sample_user_icon" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="117dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="irChatGeneral"
+            app:srcCompat="@drawable/chat_grupal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="247dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="irPerfilExter2"
+                app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="irPerfilExter2"
+                android:text="Nico Val" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_weight="1"
+                android:text="Hace 1 dia" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="489dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="173dp"
+                android:layout_height="586dp"
+                android:layout_gravity="center"
+                tools:srcCompat="?android:attr/galleryItemBackground" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="138dp"
+                android:layout_height="118dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Testeando la muestra de comentarios propios o de otros usuarios en feed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="94dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="irDiario"
+                app:srcCompat="@drawable/diario" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="irPagBusqueda"
+                app:srcCompat="@drawable/buscar" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="irGrupos"
+                app:srcCompat="@drawable/grupo" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="irRecordatorios"
+                app:srcCompat="@drawable/ic_notifications_black_24dp" />
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

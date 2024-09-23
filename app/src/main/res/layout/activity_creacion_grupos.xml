@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreacionGrupos">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical|center_horizontal"
+            android:gravity="center_vertical"
+            android:text="Creacion de Grupos"
+            android:textSize="26dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="604dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Escoge de que va a tratar tu grupo"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Selecciona 1 tema al menos"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Estilo de vida"
+                    android:textSize="24dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="98dp"
+                    android:layout_weight="1"
+                    android:text="Reflexiones"
+                    android:textSize="24dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="98dp"
+                    android:layout_weight="1"
+                    android:text="Melancolicos"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Nostalgia"
+                    android:textSize="24dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="127dp"
+                    android:layout_weight="1"
+                    android:text="Amor"
+                    android:textSize="24dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="127dp"
+                    android:layout_weight="1"
+                    android:text="Tristeza"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="124dp"
+                    android:layout_weight="1"
+                    android:text="Moralejas" />
+
+                <CheckBox
+                    android:id="@+id/checkBox12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="124dp"
+                    android:layout_weight="1"
+                    android:text="Lugares para meditar" />
+
+                <CheckBox
+                    android:id="@+id/checkBox13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="124dp"
+                    android:layout_weight="1"
+                    android:text="Impotencia" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Escribe el nombre de tu grupo" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CREAR" />
+            </LinearLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/diario" />
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/buscar" />
+
+                    <ImageView
+                        android:id="@+id/imageView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_notifications_black_24dp" />
+                </LinearLayout>
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
